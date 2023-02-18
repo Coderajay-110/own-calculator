@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cal-content">
+     <div class="heading"> <h1>Calculator</h1></div>
+      <div class="input-taker">
+         <input id="input1" type="number" name="first-number" placeholder="enter first number">
+         <input id="input2" type="number" name="second-number" placeholder="enter second number">
+      </div>
+      <div class="symbol-box">
+        <div class="symbol" id="plus" onclick="cal()">
+            <span>+</span>
+        </div>
+        <div class="symbol" id="minus" onclick="min()">
+            <span>-</span>
+        </div>
+        <div class="symbol" id="multiply" onclick="mul()" >
+            <span>&#xd7;</span>
+        </div>
+        <div class="symbol" id="divide" onclick="div()">
+            <span>/</span>
+        </div>
+      </div>
+        <!-- <div class="result"><h1 id="change"></h1></div> -->
+        <div class="result"><input id="res" type="number" placeholder="final result" readonly=""></div>
+        <div class="reset"><button onclick="reset()" id="button">reset</button></div>
+
+  </div>
+  <script src="myscripts.js"></script> 
+</body>
+</html>
